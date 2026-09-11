@@ -1149,11 +1149,6 @@ async function createWasm() {
       }
     }
 
-  function _IsMobileBrowser() {
-          // Проверяем UserAgent браузера на наличие мобильных операционных систем
-          return /iPhone|iPad|iPod|Android|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent);
-      }
-
   var JS_Accelerometer = null;
   
   var JS_Accelerometer_callback = 0;
@@ -16918,8 +16913,6 @@ var wasmImports = {
   GetJSLoadTimeInfo: _GetJSLoadTimeInfo,
   /** @export */
   GetJSMemoryInfo: _GetJSMemoryInfo,
-  /** @export */
-  IsMobileBrowser: _IsMobileBrowser,
   /** @export */
   JS_Accelerometer_IsRunning: _JS_Accelerometer_IsRunning,
   /** @export */
